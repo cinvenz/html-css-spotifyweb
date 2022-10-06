@@ -24,6 +24,7 @@ img {
 a {
     text-decoration: none;
     color: rgba(109,109,109,255);
+    
 }
 
 /* -----OVERLAY----- */
@@ -55,31 +56,12 @@ a {
     gap: 0.5rem;
 }
 
-.sidebar img {
-    width: 10rem;
-    margin-bottom: 1.5rem;
+.sidebar span{
+    visibility: hidden;
 }
 
-.fa-house, .fa-magnifying-glass, .fa-lines-leaning {
-    margin-bottom: 0.5rem;
-}
-
-.sidebar p, span {
-    color: white;
-}
-
-.sidebar .fa-house, .fa-plus-square, .fa-circle-user {
-    color: rgba(163,163,163,255);
-}
-
-.installa-app {
-    border-bottom: 1px solid rgba(109,109,109,255);
-    padding: 0.5rem 0;
-    margin-bottom: 1rem;
-}
-
-.sidebar i {
-    margin-right: 0.4rem;
+.fa-plus-square {
+    visibility: hidden;
 }
 
 .sidebar i:not(.fa-plus-square, .fa-circle-down) {
@@ -88,20 +70,87 @@ a {
     
 }
 
-.fa-plus-square {
-    font-size: 3.5rem;
-    vertical-align: middle;
-}
-
-.btn-playlist {
+.fa-house, .fa-magnifying-glass, .fa-lines-leaning {
     margin-bottom: 0.5rem;
 }
 
+.sidebar .fa-house, .fa-plus-square, .fa-circle-user {
+    color: rgba(163,163,163,255);
+}
+
+.logo {
+    visibility: hidden;
+}
+
+.sidebar .logo-small {
+    width: 2rem;
+    position: absolute;
+    visibility: visible;
+}
 
 @media screen and (min-width: 552px) {
-    .sidebar {
+   .sidebar {
         flex-basis: 180px;
     }
+
+    .logo {
+        visibility: visible;
+        width: 10rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .sidebar .logo-small {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .fa-house, .fa-magnifying-glass, .fa-lines-leaning {
+        margin-bottom: 0.5rem;
+    }
+
+    .sidebar span{
+        visibility: visible;
+        color: rgba(109,109,109,255)
+    }
+    
+    .sidebar .span-white {
+        color: white;
+    }
+
+    .fa-plus-square {
+        visibility: visible;
+    }
+    
+    
+    .sidebar .fa-house, .fa-plus-square, .fa-circle-user {
+        color: rgba(163,163,163,255);
+    }
+    
+    .installa-app {
+        border-bottom: 1px solid rgba(109,109,109,255);
+        padding: 0.5rem 0;
+        margin-bottom: 1rem;
+    }
+    
+    .sidebar i {
+        margin-right: 0.4rem;
+    }
+    
+    .sidebar i:not(.fa-plus-square, .fa-circle-down) {
+        font-size: 1.5rem;
+        vertical-align: sub;
+        
+    }
+    
+    .fa-plus-square {
+        font-size: 3.5rem;
+        vertical-align: middle;
+    }
+    
+    .btn-playlist {
+        margin-bottom: 0.5rem;
+    }
+    
 } 
 
 /* -----CONTENTS----- */
