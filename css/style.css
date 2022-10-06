@@ -74,10 +74,6 @@ a {
     margin-bottom: 0.5rem;
 }
 
-.sidebar .fa-house, .fa-plus-square, .fa-circle-user {
-    color: rgba(163,163,163,255);
-}
-
 .logo {
     visibility: hidden;
 }
@@ -86,6 +82,10 @@ a {
     width: 2rem;
     position: absolute;
     visibility: visible;
+}
+
+.sidebar a:hover{
+    color: white;
 }
 
 @media screen and (min-width: 552px) {
@@ -110,7 +110,7 @@ a {
 
     .sidebar span{
         visibility: visible;
-        color: rgba(109,109,109,255)
+        
     }
     
     .sidebar .span-white {
@@ -123,7 +123,7 @@ a {
     
     
     .sidebar .fa-house, .fa-plus-square, .fa-circle-user {
-        color: rgba(163,163,163,255);
+        /* color: rgba(163,163,163,255); */
     }
     
     .installa-app {
@@ -168,4 +168,3 @@ a {
     flex: 0 0 100%;
     height: 70px;
 }
-
