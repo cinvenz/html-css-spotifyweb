@@ -29,13 +29,34 @@ a {
 
 /* -----OVERLAY----- */
 .overlay {
-    background-color: gray;
+    background-color: rgba(8,11,18,0.8);
     position: fixed;
     inset: 0 0 auto 0;
     height: 70px;
     z-index: 10;
-    opacity: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+/* 
+.upgrade {
+    border: 1.5px solid white;
+} */
+
+.upgrade a {
+    color: white;
+    border: 1.5px solid white;
+    padding: 0.6rem 2.3rem;
+    margin-right: 1.7rem;
+    border-radius: 25px;
+}
+
+.upgrade a:hover {
+    font-size: 1.2rem;
+    padding: 0.8rem 2.5rem;
+    margin-right: 0.8rem;
+}
+
 
 /* -----SIDEBAR----- */
 .sidebar {
