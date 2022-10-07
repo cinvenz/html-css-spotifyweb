@@ -84,7 +84,10 @@ a {
 .sidebar i:not(.fa-plus-square, .fa-circle-down) {
     font-size: 1.5rem;
     vertical-align: sub;
-    
+}
+
+.fa-lines-leaning {
+    transform: scaleX(-1);
 }
 
 .fa-house, .fa-magnifying-glass, .fa-lines-leaning {
@@ -174,12 +177,76 @@ a {
 } 
 
 /* -----CONTENTS----- */
+
+/* nav */
 .contents {
-    background-color: yellow;
-    padding-top: 100px;
+    background-color: rgba(20,25,34,255);
+    padding-top: 70px;
     flex: 1 0 0;
     height: calc(100vh - 70px);
     overflow-y: auto;
+    color: white;
+  
+}
+.nav-flex {
+  font-weight: bold;
+  color: rgba(123,125,130,255);
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    --n-colums: 6;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    
+}
+
+.nav-container span {
+    flex-basis: calc((100% - (var(--n-colums) -1) * var(--gap)) / var(--n-colums));
+}
+
+/* main */
+.main-title {
+    margin: 0.5rem 1.2rem;
+}
+
+.sub-title {
+    padding: 0 1.2rem;
+}
+
+.main-flex {
+    padding: 1rem;
+    display: flex;
+    --n-colums: 6;
+    --gap: 10px;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc((100% - (var(--n-colums) -1) * var(--gap)) / var(--n-colums));
+}
+
+.music-card {
+    width: 12rem;
+}
+
+.name-card {
+  text-align: center;
+}
+
+.name-card h3 {
+    margin-bottom: .7rem;
+}
+
+.contents p {
+    color: rgba(118,121,125,255);
 }
 
 
