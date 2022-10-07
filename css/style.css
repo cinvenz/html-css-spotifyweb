@@ -190,8 +190,21 @@ a {
     height: 70px;
     display: flex;
     justify-content: space-between;
-    /* color: white; */
+    color: white;
     padding: 0.5rem;
+}
+
+.controls i {
+    font-size: 1.2rem;
+}
+
+
+/* footer left */
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-basis: 20%;
 }
 
 .sinister {
@@ -200,13 +213,22 @@ a {
     min-width: 0;
 }
 
-.footer-left {
+.nome-brano {
     display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    flex-basis: 20%;
+    flex-direction: column;
+    margin-right: 2rem;
 }
 
+.brano {
+    color: rgba(129,129,129,255);
+    font-size: 0.8rem;
+}
+
+.footer-left i {
+    color: rgba(129,129,129,255);
+}
+
+/* footer center */
 .footer-center {
     display: flex;
     flex-direction: column;
@@ -215,8 +237,11 @@ a {
     justify-content: center;
 }
 
+.forward-left {
+    transform: scaleX(-1);
+}
 
-
+/* footer right */
 .footer-right {
     display: flex;
     justify-content: flex-end;
@@ -224,9 +249,6 @@ a {
     flex-basis: 20%;
 }
 
-.forward-left {
-    transform: scaleX(-1);
-}
 
 /* prima slidebar */
 .slidebar {
