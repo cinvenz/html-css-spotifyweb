@@ -191,6 +191,7 @@ a {
 .nav-flex {
   font-weight: bold;
   color: rgba(123,125,130,255);
+  padding: 0 1rem;
 }
 
 .nav-container {
@@ -201,7 +202,11 @@ a {
     gap: 2rem;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
-    
+}
+
+.nav-container span:hover{
+    color: white;
+    cursor: pointer;
 }
 
 .nav-container span {
@@ -238,6 +243,25 @@ a {
 
 .music-card {
     width: 12rem;
+    position: relative;
+    z-index: 0;
+}
+
+.music-card i {
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    font-size: 4rem;
+    color: rgba(30,215,96,255);
+    z-index: -1;
+}
+
+.music-card img:hover {
+    opacity: 0.4;
+}
+
+.music-card:hover .fa-circle-play {
+    z-index: 0;
 }
 
 .name-card {
@@ -252,7 +276,7 @@ a {
     color: rgba(118,121,125,255);
 }
 
-
+/* MEDIA QUERY CARDS */
 @media only screen and (max-width: 1081px) {
     .main-flex {
         --n-colums: 5;
@@ -292,10 +316,40 @@ a {
     }   
 }
 
+/* MEDIA QUERY NAV */
+@media only screen and (max-width: 773px) {
+    .nav-container {
+        justify-content: flex-start;
+    }
+}
 
+@media only screen and (max-width: 595px) {
+    .nav-container {
+        justify-content: center;
+    }
+}
 
+@media only screen and (max-width: 551px) {
+    .nav-container {
+        justify-content: flex-start;
+    }
+}
 
-    
+@media only screen and (max-width: 505px) {
+    .nav-container {
+        justify-content: center;
+    }
+}
+
+/* media query mobile */
+
+@media only screen and (max-width: 413px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 /* -----CONTROLS----- */
 .controls {
@@ -324,7 +378,7 @@ a {
 .sinister {
     width: 35px;
     aspect-ratio: 1/1;
-    min-width: 0;
+   
 }
 
 .nome-brano {
