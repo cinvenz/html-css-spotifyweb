@@ -359,7 +359,7 @@ a {
     display: flex;
     justify-content: space-between;
     color: white;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .controls i {
@@ -373,6 +373,10 @@ a {
     align-items: center;
     gap: 0.8rem;
     flex-basis: 20%;
+}
+
+.footer-left .brano:hover, .footer-left  i:hover {
+    color: white;
 }
 
 .sinister {
@@ -403,7 +407,29 @@ a {
     flex-basis: 60%;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
 }
+
+.flex-footer-center {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.flex-footer-center i {
+    font-size: 1.3rem;
+}
+
+.flex-footer-center .fa-circle-play {
+    font-size: 2rem;
+}
+
+.flex-footer-center .fa-circle-play:hover {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
 
 .forward-left {
     transform: scaleX(-1);
@@ -415,8 +441,14 @@ a {
     justify-content: flex-end;
     align-items: center;
     flex-basis: 20%;
+    gap: 1rem;
+    
 }
 
+.i-right {
+    display: flex;
+    gap: 1rem;
+}
 
 /* prima rangebar */
 .rangebar{
