@@ -406,14 +406,38 @@ a {
 }
 
 .nome-brano {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    display: block;
     margin-right: 2rem;
+    overflow: hidden;
+    width: 10rem;
+    height: 3rem;
+    top: 4px;
+}
+
+.loop-text {
+    overflow: hidden;
+    animation: loop-text 5s linear infinite;
+    position: absolute;
+    display: block;
+}
+
+@keyframes loop-text {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
 }
 
 .brano {
     color: rgba(129,129,129,255);
-    font-size: 0.8rem;
+    padding-left: 7rem;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    animation-delay: 5s;
 }
 
 .footer-left i {
@@ -441,7 +465,8 @@ a {
 }
 
 .flex-footer-center .fa-circle-play {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin: 0 1rem;
 }
 
 .flex-footer-center .fa-circle-play:hover {
