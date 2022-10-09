@@ -275,7 +275,7 @@ a {
     z-index: -1;
 }
 
-.music-card img:hover {
+.music-card:hover img {
     opacity: 0.4;
 }
 
@@ -396,6 +396,7 @@ a {
 
 .footer-left .brano:hover, .footer-left  i:hover {
     color: white;
+    cursor: pointer;
 }
 
 .sinister {
@@ -447,8 +448,6 @@ a {
     font-size: 2.5rem;
     cursor: pointer;
 }
-
-
 
 .forward-left {
     transform: scaleX(-1);
