@@ -18,13 +18,11 @@ body{
 /* general */
 img {
     max-width: 100%;
-    
 }
 
 a {
     text-decoration: none;
     color: rgba(109,109,109,255);
-    
 }
 
 /* -----OVERLAY----- */
