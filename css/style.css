@@ -410,7 +410,7 @@ a {
     display: block;
     margin-right: 2rem;
     overflow: hidden;
-    width: 10rem;
+    width: 10.5rem;
     height: 3rem;
     top: 4px;
 }
@@ -433,7 +433,7 @@ a {
 
 .brano {
     color: rgba(129,129,129,255);
-    padding-left: 7rem;
+    padding-left: 6rem;
     display: inline-block;
     text-align: center;
     white-space: nowrap;
@@ -585,6 +585,49 @@ a {
     background-color: greenyellow;
 }
 
+/* CONTROLS ipad */
+.controls-ipad {
+    flex: 0 0 100%;
+    height: 70px;
+    display: flex;
+    padding: 1rem;
+    background-color: rgba(40,40,40,255);
+    color: white;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    position: absolute;
+    visibility: hidden;
+}
 
+.controls-ipad i {
+    font-size: 2rem;
+}
 
+i.fa-solid.fa-angle-up {
+    display: flex;
+    align-items: center;
+}
+
+.second-circle-play:hover{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .controls {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .controls-ipad {
+        position: relative;
+        visibility: visible;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
 
